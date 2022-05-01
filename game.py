@@ -2,6 +2,7 @@ import pygame
 import pytmx
 import pyscroll
 from player import Player
+import Data.settings.setting as setting
 
 
 class Game:
@@ -57,6 +58,6 @@ class Game:
                 if event.type == pygame.QUIT:
                     running = False
 
-            clock.tick(60)
+            clock.tick(setting.FPS)
 
         pygame.quit()
