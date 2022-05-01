@@ -3,14 +3,15 @@ import pytmx
 import pyscroll
 from player import Player
 import Data.settings.setting as setting
+import Data.data as data
 
 
 class Game:
     def __init__(self):
         
         # creer la fenetre du jeu 
-        self.screen = pygame.display.set_mode((800, 600))
-        pygame.display.set_caption("Chimpokomon")   
+        self.screen = pygame.display.set_mode((data.display_x, data.display_y))
+        pygame.display.set_caption(data.game_name)   
 
 
         # charger la carte
